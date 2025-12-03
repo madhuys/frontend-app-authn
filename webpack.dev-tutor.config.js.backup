@@ -1,0 +1,8 @@
+const { createConfig } = require('@openedx/frontend-build');
+
+const config = createConfig('webpack-dev');
+
+// Fix for fastest-levenshtein module issue
+config.module.rules[0].exclude = /node_modules\/(?!(fastest-levenshtein|@edx))/;
+
+module.exports = config;

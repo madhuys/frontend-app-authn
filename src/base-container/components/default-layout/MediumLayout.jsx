@@ -34,6 +34,41 @@ const MediumLayout = () => {
                   </span>
                 </span>
               </h1>
+              {/* CUSTOM: Big visible heart and I Love You message */}
+              <div className="text-center mb-4 p-4" style={{ 
+                backgroundColor: '#FF1493', 
+                borderRadius: '25px',
+                border: '6px solid #FFD700',
+                boxShadow: '0 0 25px rgba(255, 20, 147, 0.6)',
+                maxWidth: '500px',
+                margin: '0 auto'
+              }}>
+                <div style={{ marginBottom: '20px' }}>
+                  <Image 
+                    src="https://png.pngtree.com/png-vector/20200903/ourmid/pngtree-3d-love-symbol-logo-png-image_2338413.jpg" 
+                    alt="Love Symbol" 
+                    style={{ width: '180px', height: 'auto' }}
+                  />
+                </div>
+                <h1 style={{ 
+                  fontSize: '56px', 
+                  fontWeight: 'bold', 
+                  color: '#FFFFFF',
+                  textShadow: '3px 3px 7px rgba(0,0,0,0.5)',
+                  margin: '0'
+                }}>
+                  I LOVE YOU! 💕
+                </h1>
+                <p style={{ 
+                  fontSize: '28px', 
+                  color: '#FFFF00',
+                  marginTop: '18px',
+                  fontWeight: 'bold'
+                }}>
+                  Welcome to MadhuEdX Learning!
+                </p>
+              </div>
+              {/* END CUSTOM */}
             </div>
           </div>
         </div>
